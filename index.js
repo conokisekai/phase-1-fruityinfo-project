@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
       formData.forEach((value, key) => {
         formObject[key] = value;
       });
-
+      console.log(formObject);
       // Perform a PUT request to update the fruit information
       fetch(
         'https://cors-anywhere.herokuapp.com/https://fruityvice.com/api/fruit',
@@ -92,9 +92,8 @@ document.addEventListener('DOMContentLoaded', function () {
           }
           return response.json();
         })
-        .then((updatedFruit) => {
-          // Display updated details if needed
-          // You can also update the list with the updated data
+        .then((data) => {
+          alert('Form submission was successful. Response was OK.');
         })
         .catch((error) => {
           alert(
