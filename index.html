@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FruityInfo - Explore the World of Fruits</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>FruityInfo</h1>
+      <h1>FruityInfo</h1>
     </header>
 
     <main>
+      <div id="top-section">
+        <div class="fruit-list">List of Fruits</div>
         <div>
-            <div class="fruit-list">List of Fruits</div>
-            <div>
-                <div class="fruit-details">Fruit Details</div>
-                <div>
-                    <button type="like-fruit">I Like this Fruit</button>
-                </div>
-            </div>
+          <div class="fruit-details">Fruit Details</div>
+          <div>
+            <button type="like-fruit">I Like this Fruit</button>
+          </div>
         </div>
+      </div>
 
+      <div id="bottom-section">
         <div>
-            <div>
-                <h1>Add a New Fruit</h1>
-            </div>
-            <form id="new-fruit-info">
-                <div>
-                    <label for="fruit-name">Fruit Name</label>
-                    <input type="text" id="fruit-name" name="fruit-name"required/>
-                </div>
-                <button type="submit">Add New Fruit</button>
-            </form>
+          <h1>Add a New Fruit</h1>
         </div>
+        <form id="new-fruit-info">
+          <div>
+            <label for="fruit-name">Fruit Name</label>
+            <input type="text" id="fruit-name" name="fruit-name" required />
+          </div>
+          <button type="submit">Add New Fruit</button>
+        </form>
+      </div>
     </main>
 
     <footer>
-        <p>&copy; 2023 FruityInfo Project</p>
+      <p>&copy; 2023 FruityInfo Project</p>
     </footer>
 
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
