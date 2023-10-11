@@ -1,22 +1,74 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-    background-color: green;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
 }
 footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+main > div {
+  width: 100%;
+  margin-bottom: 10px; /* Optional: Add margin between the two divs */
+}
+
+/* To ensure that the button is centered, you can wrap it in a div */
+.fruit-details > div {
+  display: flex;
+  justify-content: center;
+}
+
+/* Adjustments for better alignment and spacing */
+.fruit-list {
+  background-color: #f0f0f0; /* Example background color */
+  padding: 10px; /* Example padding */
+  border: 1px solid #ddd; /* Example border for separation */
+}
+
+/* Optional styles for the button */
+button[type='like-fruit'] {
+  background-color: #007bff; /* Example button background color */
+  color: #fff; /* Example text color */
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Styles for the form */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px; /* Optional: Add margin above the form */
+}
+
+/* Optional styles for the label and input field */
+label {
+  font-weight: bold;
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px; /* Optional: Add margin between label and input */
 }
