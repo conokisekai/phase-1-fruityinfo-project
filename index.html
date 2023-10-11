@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FruityInfo - Explore the World of Fruits</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
   </head>
   <body>
     <header>
@@ -13,22 +14,43 @@
     <main id="main-section">
       <div id="top-section">
         <div class="fruit-list-container">
-          <h1>List of Fruits</h1>
+          <h1>list of fruits</h1>
           <ul id="fruit-list"></ul>
         </div>
         <div class="fruit-details-container">
           <div class="fruit-details-inner-container">
             <h1>Fruit Details</h1>
-            <div class="fruit-details">Fruit Full Details</div>
+            <div class="fruit-details">Fruit full details</div>
           </div>
           <div class="fruit-like-container">
-            <button type="submit">I Like this Fruit</button>
+            <input
+              type="checkbox"
+              id="like-dislike-toggle"
+              class="hidden-checkbox"
+            />
+            <label for="like-dislike-toggle" id="center-like">
+              <span
+                class="iconify like"
+                data-icon="majesticons:heart"
+                style="color: rgb(238, 12, 50)"
+                data-width="20"
+                data-height="20"
+              ></span>
+              <span
+                class="iconify dislike"
+                data-icon="majesticons:heart-line"
+                style="color: rgb(227, 20, 54)"
+                data-width="20"
+                data-height="20"
+              ></span>
+              I Like this Fruit
+            </label>
           </div>
         </div>
       </div>
       <div id="bottom-section">
         <div class="add-fruit-left">
-          <h1>Add a Fruit</h1>
+          <h1>add a fruit</h1>
         </div>
         <div class="add-fruit-right">
           <h1>Fruit Information Form</h1>
