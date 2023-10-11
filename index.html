@@ -6,16 +6,14 @@
     <title>FruityInfo - Explore the World of Fruits</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <header>
       <h1>FruityInfo</h1>
     </header>
-
     <main id="main-section">
       <div id="top-section">
         <div class="fruit-list-container">
-          <h1>List of Fruits</h1>
+          <h1>list of fruits</h1>
           <ul id="fruit-list"></ul>
         </div>
         <div class="fruit-details-container">
@@ -28,108 +26,127 @@
           </div>
         </div>
       </div>
-
       <div id="bottom-section">
-        <div class="add-fruit-left"><h1>Add a Fruit</h1></div>
+        <div class="add-fruit-left">
+          <h1>add a fruit</h1>
+        </div>
         <div class="add-fruit-right">
           <h1>Fruit Information Form</h1>
           <form id="fruit-info">
-            <label for="genus">Genus:</label>
-            <input
-              type="text"
-              id="genus"
-              name="genus"
-              value="Fragaria"
-              required
-            /><br /><br />
-
-            <label for="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value="Strawberry"
-              required
-            /><br /><br />
-
-            <label for="family">Family:</label>
-            <input
-              type="text"
-              id="family"
-              name="family"
-              value="Rosaceae"
-              required
-            /><br /><br />
-
-            <label for="order">Order:</label>
-            <input
-              type="text"
-              id="order"
-              name="order"
-              value="Rosales"
-              required
-            /><br /><br />
-
+            <div class="form-field">
+              <label for="genus">Genus:</label>
+              <input
+                type="text"
+                id="genus"
+                name="genus"
+                value="Fragaria"
+                required
+                class="rounded-input"
+              />
+            </div>
+            <div class="form-field">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value="Strawberry"
+                required
+                class="rounded-input"
+              />
+            </div>
+            <div class="form-field">
+              <label for="family">Family:</label>
+              <input
+                type="text"
+                id="family"
+                name="family"
+                value="Rosaceae"
+                required
+                class="rounded-input"
+              />
+            </div>
+            <div class="form-field">
+              <label for="order">Order:</label>
+              <input
+                type="text"
+                id="order"
+                name="order"
+                value="Rosales"
+                required
+                class="rounded-input"
+              />
+            </div>
             <h2>Nutritional Information</h2>
-            <label for="carbohydrates">Carbohydrates (g):</label>
-            <input
-              type="number"
-              step="0.1"
-              id="carbohydrates"
-              name="nutritions[carbohydrates]"
-              value="5.5"
-              required
-            /><br /><br />
-
-            <label for="protein">Protein (g):</label>
-            <input
-              type="number"
-              step="0.1"
-              id="protein"
-              name="nutritions[protein]"
-              value="0"
-              required
-            /><br /><br />
-
-            <label for="fat">Fat (g):</label>
-            <input
-              type="number"
-              step="0.1"
-              id="fat"
-              name="nutritions[fat]"
-              value="0.4"
-              required
-            /><br /><br />
-
-            <label for="calories">Calories:</label>
-            <input
-              type="number"
-              id="calories"
-              name="nutritions[calories]"
-              value="29"
-              required
-            /><br /><br />
-
-            <label for="sugar">Sugar (g):</label>
-            <input
-              type="number"
-              step="0.1"
-              id="sugar"
-              name="nutritions[sugar]"
-              value="5.4"
-              required
-            /><br /><br />
-
-            <input type="submit" value="Submit" />
+            <div class="form-field">
+              <label for="carbohydrates">Carbohydrates (g):</label>
+              <input
+                type="number"
+                step="0.1"
+                id="carbohydrates"
+                name="nutritions[carbohydrates]"
+                value="5.5"
+                required
+                class="rounded-input"
+              />
+            </div>
+            <div class="form-field">
+              <label for="protein">Protein (g):</label>
+              <input
+                type="number"
+                step="0.1"
+                id="protein"
+                name="nutritions[protein]"
+                value="0"
+                required
+                class="rounded-input"
+              />
+            </div>
+            <div class="form-field">
+              <label for="fat">Fat (g):</label>
+              <input
+                type="number"
+                step="0.1"
+                id="fat"
+                name="nutritions[fat]"
+                value="0.4"
+                required
+                class="rounded-input"
+              />
+            </div>
+            <div class="form-field">
+              <label for="calories">Calories:</label>
+              <input
+                type="number"
+                id="calories"
+                name="nutritions[calories]"
+                value="29"
+                required
+                class="rounded-input"
+              />
+            </div>
+            <div class="form-field">
+              <label for="sugar">Sugar (g):</label>
+              <input
+                type="number"
+                step="0.1"
+                id="sugar"
+                name="nutritions[sugar]"
+                value="5.4"
+                required
+                class="rounded-input"
+              />
+            </div>
+            <div class="form-field">
+              <input type="submit" id="add-fruit-submit" value="Add Fruit" />
+            </div>
           </form>
         </div>
       </div>
     </main>
-
     <footer>
       <p>&copy; 2023 FruityInfo Project</p>
     </footer>
-
     <script src="index.js"></script>
   </body>
 </html>

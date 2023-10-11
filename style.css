@@ -10,6 +10,9 @@ header {
   color: white;
   text-align: center;
   padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 footer {
   background-color: #4caf50;
@@ -25,6 +28,7 @@ footer {
   flex-direction: column;
   width: 100%;
   margin-bottom: 60px;
+  margin-top: 80px;
 }
 
 #top-section {
@@ -67,4 +71,15 @@ footer {
 .add-fruit-right {
   flex: 2;
   padding: 20px;
+}
+#add-fruit-submit {
+  padding: 10px 30px 10px 30px;
+}
+.form-field {
+  padding: 10px;
+}
+.rounded-input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
 }
