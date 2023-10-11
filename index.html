@@ -19,22 +19,110 @@
           <ul id="fruit-list"></ul>
         </div>
         <div class="fruit-details-container">
-          <div class="fruit-details">Fruit Details</div>
-          <div>
-            <button type="like-fruit">I Like this Fruit</button>
+          <div class="fruit-details-inner-container">
+            <h1>Fruit Details</h1>
+            <div class="fruit-details">Fruit full details</div>
+          </div>
+          <div class="fruit-like-container">
+            <button type="submit">I Like this Fruit</button>
           </div>
         </div>
       </div>
 
       <div id="bottom-section">
-        <div><h1>Add a Fruit</h1></div>
-        <form id="new-fruit-info">
-          <div>
-            <label for="fruit-name">Fruit Name</label>
-            <input type="text" id="fruit-name" name="fruit-name" required />
-          </div>
-          <button type="submit">Add New Fruit</button>
-        </form>
+        <div class="add-fruit-left"><h1>Add a Fruit</h1></div>
+        <div class="add-fruit-right">
+          <h1>Fruit Information Form</h1>
+          <form id="fruit-info">
+            <label for="genus">Genus:</label>
+            <input
+              type="text"
+              id="genus"
+              name="genus"
+              value="Fragaria"
+              required
+            /><br /><br />
+
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value="Strawberry"
+              required
+            /><br /><br />
+
+            <label for="family">Family:</label>
+            <input
+              type="text"
+              id="family"
+              name="family"
+              value="Rosaceae"
+              required
+            /><br /><br />
+
+            <label for="order">Order:</label>
+            <input
+              type="text"
+              id="order"
+              name="order"
+              value="Rosales"
+              required
+            /><br /><br />
+
+            <h2>Nutritional Information</h2>
+            <label for="carbohydrates">Carbohydrates (g):</label>
+            <input
+              type="number"
+              step="0.1"
+              id="carbohydrates"
+              name="nutritions[carbohydrates]"
+              value="5.5"
+              required
+            /><br /><br />
+
+            <label for="protein">Protein (g):</label>
+            <input
+              type="number"
+              step="0.1"
+              id="protein"
+              name="nutritions[protein]"
+              value="0"
+              required
+            /><br /><br />
+
+            <label for="fat">Fat (g):</label>
+            <input
+              type="number"
+              step="0.1"
+              id="fat"
+              name="nutritions[fat]"
+              value="0.4"
+              required
+            /><br /><br />
+
+            <label for="calories">Calories:</label>
+            <input
+              type="number"
+              id="calories"
+              name="nutritions[calories]"
+              value="29"
+              required
+            /><br /><br />
+
+            <label for="sugar">Sugar (g):</label>
+            <input
+              type="number"
+              step="0.1"
+              id="sugar"
+              name="nutritions[sugar]"
+              value="5.4"
+              required
+            /><br /><br />
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
       </div>
     </main>
 

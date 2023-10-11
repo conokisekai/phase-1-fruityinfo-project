@@ -24,6 +24,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 60px;
 }
 
 #top-section {
@@ -40,4 +41,30 @@ footer {
   flex: 2; /* Occupy 2/3 of the available space */
   padding: 20px; /* Add some padding for spacing */
   background-color: #e0e0e0; /* Background color for styling (optional) */
+}
+.fruit-details-inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fruit-like-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bottom-section {
+  padding: 20px;
+  display: flex;
+}
+.add-fruit-left {
+  flex: 1;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.add-fruit-right {
+  flex: 2;
+  padding: 20px;
 }
