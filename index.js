@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const fruitDetails = document.querySelector('.fruit-details');
   let data; // Define data in a broader scope
 
-  // Function to display fruit details
-
   // Function to display full fruit details
   function displayFullFruitDetails(fruit) {
     fruitDetails.innerHTML = `
