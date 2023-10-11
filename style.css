@@ -63,8 +63,9 @@ body {
     align-items: center;
   }
   #bottom-section {
-    padding: 20px;
+    padding: 20px 20px 60px 20px;
     display: flex;
+    margin-bottom: 50px;
   }
   .add-fruit-left {
     flex: 1;
