@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Function to handle form submission
   document
     .getElementById('fruit-info')
-    .addEventListener('submit', function (event) {
+    .addEventListener('submit', async function (event) {
       event.preventDefault();
       const formData = new FormData(event.target);
 
@@ -75,31 +75,30 @@ document.addEventListener('DOMContentLoaded', function () {
         formObject[key] = value;
       });
       console.log(formObject);
-      // Perform a PUT request to update the fruit information
-      fetch(
-        'https://cors-anywhere.herokuapp.com/https://fruityvice.com/api/fruit',
-        {
-          method: 'PUT',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formObject),
-        }
-      )
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
+
+      try {
+        const response = await fetch(
+          'https://cors-anywhere.herokuapp.com/https://fruityvice.com/api/fruit',
+          {
+            method: 'PUT',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formObject),
           }
-          return response.json();
-        })
-        .then((data) => {
-          alert('Form submission was successful. Response was OK.');
-        })
-        .catch((error) => {
-          alert(
-            'There was a problem with the input fields or the fruit already exists.'
-          );
-          console.error('Error:', error);
-        });
+        );
+
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+
+        const data = await response.json();
+        alert('Form submission was successful. Response was OK.');
+      } catch (error) {
+        alert(
+          'There was a problem with the input fields or the fruit already exists.'
+        );
+        console.error('Error:', error);
+      }
     });
 });
