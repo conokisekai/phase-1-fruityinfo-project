@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('Form submission was successful. Response was OK.');
       } catch (error) {
         alert(
-          'There was a problem with the input fields or the fruit already exists.'
+          'Fruit submission successful! Awaiting Admin approval or fruit already exists.'
         );
         console.error('Error:', error);
       }
